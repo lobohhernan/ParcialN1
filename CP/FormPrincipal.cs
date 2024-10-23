@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ParcialN1.CP
+namespace ParcialN1
 {
-    public partial class FormVentas : Form
+    public partial class FormPrincipal : Form
     {
-        public FormVentas()
+        public FormPrincipal()
         {
             InitializeComponent();
         }

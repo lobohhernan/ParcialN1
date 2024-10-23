@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ParcialN1.CP
 {
-    public partial class FormLogin : Form
+    public partial class FormAdmin : Form
     {
-        public FormLogin()
+        public FormAdmin()
         {
             InitializeComponent();
         }
