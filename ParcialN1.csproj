@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="CD\EmpleadoD.cs" />
     <Compile Include="CD\PeliculaD.cs" />
+    <Compile Include="CL\EmpleadoL.cs" />
+    <Compile Include="CL\PeliculaL.cs" />
     <Compile Include="CP\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +101,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
