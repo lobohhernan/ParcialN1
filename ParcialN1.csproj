@@ -46,16 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CP\Form1.cs">
+    <Compile Include="CD\EmpleadoD.cs" />
+    <Compile Include="CD\PeliculaD.cs" />
+    <Compile Include="CP\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CP\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CP\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP\FormPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP\FormPeliculas.Designer.cs">
+      <DependentUpon>FormPeliculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP\FormVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP\FormVentas.Designer.cs">
+      <DependentUpon>FormVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CP\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CP\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,7 +100,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CD\" />
     <Folder Include="CL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
