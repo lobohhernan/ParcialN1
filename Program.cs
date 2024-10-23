@@ -17,7 +17,7 @@ namespace ParcialN1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormLogin());
-            Console.WriteLine("hellowordl");
+            
         }
     }
 }
