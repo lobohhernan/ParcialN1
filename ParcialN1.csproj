@@ -127,5 +127,38 @@
   <ItemGroup>
     <None Include="Resources\salida %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sw.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elpadrino.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avengers.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-batman-poster-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-batman-poster-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cars.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pulpbanner.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
