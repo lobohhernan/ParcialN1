@@ -160,5 +160,8 @@
   <ItemGroup>
     <None Include="Resources\pulpbanner.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt-administrador.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

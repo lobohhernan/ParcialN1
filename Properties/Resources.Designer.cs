@@ -63,6 +63,16 @@ namespace ParcialN1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap alt_administrador {
+            get {
+                object obj = ResourceManager.GetObject("alt-administrador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap avengers {
             get {
                 object obj = ResourceManager.GetObject("avengers", resourceCulture);
