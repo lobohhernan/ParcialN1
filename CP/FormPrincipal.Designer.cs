@@ -439,6 +439,8 @@
             // 
             // btnComprar3
             // 
+            this.btnComprar3.BackColor = System.Drawing.Color.Transparent;
+            this.btnComprar3.BorderRadius = 10;
             this.btnComprar3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnComprar3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnComprar3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -512,6 +514,8 @@
             // 
             // btnComprar1
             // 
+            this.btnComprar1.BackColor = System.Drawing.Color.Transparent;
+            this.btnComprar1.BorderRadius = 10;
             this.btnComprar1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnComprar1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnComprar1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -585,6 +589,8 @@
             // 
             // btnComprar2
             // 
+            this.btnComprar2.BackColor = System.Drawing.Color.Transparent;
+            this.btnComprar2.BorderRadius = 10;
             this.btnComprar2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnComprar2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnComprar2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -1251,9 +1257,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(782, 523);
             this.Controls.Add(this.pnlPeliculas);
+            this.Controls.Add(this.pnlIngresar);
             this.Controls.Add(this.pnlEstrenos);
             this.Controls.Add(this.pnlPromos);
-            this.Controls.Add(this.pnlIngresar);
             this.Controls.Add(this.pnlNosotros);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlLeft);
