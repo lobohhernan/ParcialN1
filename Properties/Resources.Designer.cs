@@ -63,6 +63,16 @@ namespace ParcialN1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _30Sep24_Anis_Live_stream_Free_Upload {
+            get {
+                object obj = ResourceManager.GetObject("30Sep24 Anis Live stream Free Upload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap alt_administrador {
             get {
                 object obj = ResourceManager.GetObject("alt-administrador", resourceCulture);
@@ -126,6 +136,16 @@ namespace ParcialN1.Properties {
         internal static System.Drawing.Bitmap cars {
             get {
                 object obj = ResourceManager.GetObject("cars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cerrar {
+            get {
+                object obj = ResourceManager.GetObject("cerrar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +233,16 @@ namespace ParcialN1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pochocolos_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("pochocolos-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pulpbanner {
             get {
                 object obj = ResourceManager.GetObject("pulpbanner", resourceCulture);
@@ -266,6 +296,26 @@ namespace ParcialN1.Properties {
         internal static System.Drawing.Bitmap the_batman_poster_21 {
             get {
                 object obj = ResourceManager.GetObject("the-batman-poster-21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tickjet_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("tickjet-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario {
+            get {
+                object obj = ResourceManager.GetObject("usuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

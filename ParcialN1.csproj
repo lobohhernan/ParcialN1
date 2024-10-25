@@ -163,5 +163,20 @@
   <ItemGroup>
     <None Include="Resources\alt-administrador.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tickjet-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pochocolos-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30Sep24 Anis Live stream Free Upload.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
