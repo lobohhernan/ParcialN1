@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParcialN1.CL
 {
-    internal class EmpleadoL
+    internal class AdminL
     {
     }
 }

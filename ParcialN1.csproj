@@ -181,5 +181,20 @@
   <ItemGroup>
     <None Include="Resources\usd-circulo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hernan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oscar.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

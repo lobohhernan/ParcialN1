@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParcialN1.CD
 {
-    internal class EmpleadoD
+    internal class AdminD
     {
     }
 }

@@ -163,6 +163,16 @@ namespace ParcialN1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hernan {
+            get {
+                object obj = ResourceManager.GetObject("hernan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_pop_corn_cinema_design_vector_10592522_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("icon-pop-corn-cinema-design-vector-10592522-removebg-preview", resourceCulture);
@@ -223,6 +233,26 @@ namespace ParcialN1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maxi {
+            get {
+                object obj = ResourceManager.GetObject("maxi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oscar {
+            get {
+                object obj = ResourceManager.GetObject("oscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap palomitas_de_maiz {
             get {
                 object obj = ResourceManager.GetObject("palomitas-de-maiz", resourceCulture);
@@ -266,6 +296,26 @@ namespace ParcialN1.Properties {
         internal static System.Drawing.Bitmap salida__1_ {
             get {
                 object obj = ResourceManager.GetObject("salida (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap santi {
+            get {
+                object obj = ResourceManager.GetObject("santi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap santi1 {
+            get {
+                object obj = ResourceManager.GetObject("santi1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

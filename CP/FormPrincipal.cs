@@ -129,5 +129,14 @@ namespace ParcialN1
             pnlPeliEntr3.Visible = true;
         }
 
+        private void guna2HtmlLabel17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
