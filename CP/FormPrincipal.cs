@@ -146,7 +146,28 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
-            pnlAdministrador.Visible = true;
+
+            string usuarioCorrecto = "Admin1234";
+            string contraseñaCorrecta = "12345";
+
+            // Obtener valores de los TextBox
+            string usuarioIngresado = txtUsuario.Text;
+            string contraseñaIngresada = txtContraseña.Text;
+
+            // Verificar credenciales
+            if (usuarioIngresado == usuarioCorrecto && contraseñaIngresada == contraseñaCorrecta)
+            {
+                // Credenciales correctas, mostrar panel administrador
+                pnlAdministrador.Visible = true;
+                MessageBox.Show("Bienvenido al panel administrador");
+            }
+            else
+            {
+                // Credenciales incorrectas, mostrar mensaje de error
+                pnlIngresar.Visible = true;
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }
