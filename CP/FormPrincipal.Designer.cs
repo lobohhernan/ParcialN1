@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.pnlLeft = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnIngresar = new System.Windows.Forms.Button();
@@ -144,6 +147,17 @@
             this.lblAdmin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtContraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pnlAdministrador = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlLeft.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
@@ -183,6 +197,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.pnlIngresar.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            this.pnlAdministrador.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.guna2CustomGradientPanel3.SuspendLayout();
+            this.guna2CustomGradientPanel2.SuspendLayout();
+            this.guna2CustomGradientPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -198,9 +217,9 @@
             this.pnlLeft.Controls.Add(this.pnlLogo);
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnlLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLeft.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(165, 493);
+            this.pnlLeft.Size = new System.Drawing.Size(165, 540);
             this.pnlLeft.TabIndex = 0;
             // 
             // btnIngresar
@@ -210,7 +229,7 @@
             this.btnIngresar.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.Image = global::ParcialN1.Properties.Resources.alt_administrador;
             this.btnIngresar.Location = new System.Drawing.Point(14, 389);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(151, 33);
             this.btnIngresar.TabIndex = 4;
@@ -226,7 +245,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Image = global::ParcialN1.Properties.Resources.salida__1_;
             this.btnSalir.Location = new System.Drawing.Point(7, 489);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(149, 33);
             this.btnSalir.TabIndex = 3;
@@ -239,7 +258,7 @@
             // 
             this.IzqIcono.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.IzqIcono.Location = new System.Drawing.Point(-1, 114);
-            this.IzqIcono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IzqIcono.Margin = new System.Windows.Forms.Padding(2);
             this.IzqIcono.Name = "IzqIcono";
             this.IzqIcono.Size = new System.Drawing.Size(11, 33);
             this.IzqIcono.TabIndex = 2;
@@ -251,7 +270,7 @@
             this.btnNosotros.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNosotros.Image = global::ParcialN1.Properties.Resources.usuarios_alt;
             this.btnNosotros.Location = new System.Drawing.Point(13, 323);
-            this.btnNosotros.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNosotros.Margin = new System.Windows.Forms.Padding(2);
             this.btnNosotros.Name = "btnNosotros";
             this.btnNosotros.Size = new System.Drawing.Size(152, 33);
             this.btnNosotros.TabIndex = 1;
@@ -267,7 +286,7 @@
             this.btnPromo.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPromo.Image = global::ParcialN1.Properties.Resources.insignia_porcentaje;
             this.btnPromo.Location = new System.Drawing.Point(13, 255);
-            this.btnPromo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPromo.Margin = new System.Windows.Forms.Padding(2);
             this.btnPromo.Name = "btnPromo";
             this.btnPromo.Size = new System.Drawing.Size(152, 33);
             this.btnPromo.TabIndex = 1;
@@ -283,7 +302,7 @@
             this.btnEstrenos.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstrenos.Image = global::ParcialN1.Properties.Resources.palomitas_de_maiz;
             this.btnEstrenos.Location = new System.Drawing.Point(13, 183);
-            this.btnEstrenos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEstrenos.Margin = new System.Windows.Forms.Padding(2);
             this.btnEstrenos.Name = "btnEstrenos";
             this.btnEstrenos.Size = new System.Drawing.Size(152, 33);
             this.btnEstrenos.TabIndex = 1;
@@ -299,7 +318,7 @@
             this.btnPeliculas.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPeliculas.Image = global::ParcialN1.Properties.Resources.badajo_abierto__1_;
             this.btnPeliculas.Location = new System.Drawing.Point(13, 114);
-            this.btnPeliculas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPeliculas.Margin = new System.Windows.Forms.Padding(2);
             this.btnPeliculas.Name = "btnPeliculas";
             this.btnPeliculas.Size = new System.Drawing.Size(152, 33);
             this.btnPeliculas.TabIndex = 1;
@@ -314,7 +333,7 @@
             this.pnlLogo.Controls.Add(this.guna2Panel1);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(165, 85);
             this.pnlLogo.TabIndex = 0;
@@ -337,7 +356,7 @@
             this.guna2Panel1.Controls.Add(this.guna2GradientPanel7);
             this.guna2Panel1.Controls.Add(this.guna2GradientPanel8);
             this.guna2Panel1.Location = new System.Drawing.Point(165, 23);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
             this.guna2Panel1.Size = new System.Drawing.Size(617, 513);
@@ -354,7 +373,7 @@
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel5.Location = new System.Drawing.Point(44, 286);
-            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel5.ShadowDecoration.Depth = 60;
@@ -374,7 +393,7 @@
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel6.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel6.Location = new System.Drawing.Point(428, 25);
-            this.guna2GradientPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel6.ShadowDecoration.Depth = 60;
@@ -394,7 +413,7 @@
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel7.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(236, 25);
-            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel7.ShadowDecoration.Depth = 60;
@@ -414,7 +433,7 @@
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel8.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel8.Location = new System.Drawing.Point(44, 25);
-            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
             this.guna2GradientPanel8.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel8.ShadowDecoration.Depth = 60;
@@ -428,9 +447,9 @@
             this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(165, 0);
-            this.pnlTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(617, 23);
+            this.pnlTop.Size = new System.Drawing.Size(615, 23);
             this.pnlTop.TabIndex = 1;
             // 
             // pnlPeliculas
@@ -439,8 +458,8 @@
             this.pnlPeliculas.Controls.Add(this.pnlPelicula3);
             this.pnlPeliculas.Controls.Add(this.pnlPelicula1);
             this.pnlPeliculas.Controls.Add(this.pnlPelicula2);
-            this.pnlPeliculas.Location = new System.Drawing.Point(165, 21);
-            this.pnlPeliculas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPeliculas.Location = new System.Drawing.Point(165, 23);
+            this.pnlPeliculas.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPeliculas.Name = "pnlPeliculas";
             this.pnlPeliculas.Size = new System.Drawing.Size(620, 520);
             this.pnlPeliculas.TabIndex = 2;
@@ -458,7 +477,7 @@
             this.pnlPelicula3.FillColor2 = System.Drawing.Color.Black;
             this.pnlPelicula3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.pnlPelicula3.Location = new System.Drawing.Point(425, 23);
-            this.pnlPelicula3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPelicula3.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPelicula3.Name = "pnlPelicula3";
             this.pnlPelicula3.Size = new System.Drawing.Size(182, 449);
             this.pnlPelicula3.TabIndex = 4;
@@ -502,7 +521,7 @@
             this.btnComprar3.ForeColor = System.Drawing.Color.Black;
             this.btnComprar3.Image = global::ParcialN1.Properties.Resources.recibo;
             this.btnComprar3.Location = new System.Drawing.Point(20, 392);
-            this.btnComprar3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnComprar3.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprar3.Name = "btnComprar3";
             this.btnComprar3.Size = new System.Drawing.Size(140, 33);
             this.btnComprar3.TabIndex = 1;
@@ -514,7 +533,7 @@
             this.guna2PictureBox2.Image = global::ParcialN1.Properties.Resources.the_batman_poster_21;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(-1, 5);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(183, 299);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -534,7 +553,7 @@
             this.pnlPelicula1.FillColor2 = System.Drawing.Color.Black;
             this.pnlPelicula1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.pnlPelicula1.Location = new System.Drawing.Point(11, 23);
-            this.pnlPelicula1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPelicula1.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPelicula1.Name = "pnlPelicula1";
             this.pnlPelicula1.Size = new System.Drawing.Size(182, 449);
             this.pnlPelicula1.TabIndex = 3;
@@ -578,7 +597,7 @@
             this.btnComprar1.ForeColor = System.Drawing.Color.Black;
             this.btnComprar1.Image = global::ParcialN1.Properties.Resources.recibo;
             this.btnComprar1.Location = new System.Drawing.Point(20, 392);
-            this.btnComprar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnComprar1.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprar1.Name = "btnComprar1";
             this.btnComprar1.Size = new System.Drawing.Size(140, 33);
             this.btnComprar1.TabIndex = 1;
@@ -590,7 +609,7 @@
             this.guna2PictureBox1.Image = global::ParcialN1.Properties.Resources.sw;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(-3, 5);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(186, 299);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -610,7 +629,7 @@
             this.pnlPelicula2.FillColor2 = System.Drawing.Color.Black;
             this.pnlPelicula2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.pnlPelicula2.Location = new System.Drawing.Point(218, 23);
-            this.pnlPelicula2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPelicula2.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPelicula2.Name = "pnlPelicula2";
             this.pnlPelicula2.Size = new System.Drawing.Size(182, 449);
             this.pnlPelicula2.TabIndex = 2;
@@ -654,7 +673,7 @@
             this.btnComprar2.ForeColor = System.Drawing.Color.Black;
             this.btnComprar2.Image = global::ParcialN1.Properties.Resources.recibo;
             this.btnComprar2.Location = new System.Drawing.Point(21, 392);
-            this.btnComprar2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnComprar2.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprar2.Name = "btnComprar2";
             this.btnComprar2.Size = new System.Drawing.Size(140, 33);
             this.btnComprar2.TabIndex = 1;
@@ -666,7 +685,7 @@
             this.guna2PictureBox3.Image = global::ParcialN1.Properties.Resources.Elpadrino;
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(-11, 5);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(205, 299);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -692,8 +711,8 @@
             this.pnlPeliEntr3.FillColor = System.Drawing.Color.Red;
             this.pnlPeliEntr3.FillColor2 = System.Drawing.Color.Black;
             this.pnlPeliEntr3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.pnlPeliEntr3.Location = new System.Drawing.Point(166, 22);
-            this.pnlPeliEntr3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPeliEntr3.Location = new System.Drawing.Point(165, 23);
+            this.pnlPeliEntr3.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPeliEntr3.Name = "pnlPeliEntr3";
             this.pnlPeliEntr3.Size = new System.Drawing.Size(620, 520);
             this.pnlPeliEntr3.TabIndex = 7;
@@ -711,7 +730,7 @@
             this.btnPagar3.ForeColor = System.Drawing.Color.Black;
             this.btnPagar3.Image = global::ParcialN1.Properties.Resources.usd_circulo;
             this.btnPagar3.Location = new System.Drawing.Point(342, 421);
-            this.btnPagar3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPagar3.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar3.Name = "btnPagar3";
             this.btnPagar3.Size = new System.Drawing.Size(140, 33);
             this.btnPagar3.TabIndex = 10;
@@ -747,7 +766,7 @@
             this.guna2Button6.HoverState.FillColor = System.Drawing.Color.DeepSkyBlue;
             this.guna2Button6.Image = global::ParcialN1.Properties.Resources.recibo;
             this.guna2Button6.Location = new System.Drawing.Point(87, 369);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Size = new System.Drawing.Size(81, 33);
             this.guna2Button6.TabIndex = 8;
@@ -795,7 +814,7 @@
             "Tarjeta debito",
             "Tarjeta credito"});
             this.ComboBoxPagos3.Location = new System.Drawing.Point(259, 217);
-            this.ComboBoxPagos3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxPagos3.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxPagos3.Name = "ComboBoxPagos3";
             this.ComboBoxPagos3.Size = new System.Drawing.Size(307, 36);
             this.ComboBoxPagos3.TabIndex = 5;
@@ -882,7 +901,7 @@
             this.guna2PictureBox7.Image = global::ParcialN1.Properties.Resources.the_batman_poster_2;
             this.guna2PictureBox7.ImageRotate = 0F;
             this.guna2PictureBox7.Location = new System.Drawing.Point(51, 61);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.ShadowDecoration.Enabled = true;
             this.guna2PictureBox7.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(12);
@@ -910,8 +929,8 @@
             this.pnlPeliEntr2.FillColor = System.Drawing.Color.Goldenrod;
             this.pnlPeliEntr2.FillColor2 = System.Drawing.Color.Black;
             this.pnlPeliEntr2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.pnlPeliEntr2.Location = new System.Drawing.Point(166, 23);
-            this.pnlPeliEntr2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPeliEntr2.Location = new System.Drawing.Point(165, 23);
+            this.pnlPeliEntr2.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPeliEntr2.Name = "pnlPeliEntr2";
             this.pnlPeliEntr2.Size = new System.Drawing.Size(620, 520);
             this.pnlPeliEntr2.TabIndex = 6;
@@ -929,7 +948,7 @@
             this.btnPagar2.ForeColor = System.Drawing.Color.Black;
             this.btnPagar2.Image = global::ParcialN1.Properties.Resources.usd_circulo;
             this.btnPagar2.Location = new System.Drawing.Point(342, 421);
-            this.btnPagar2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPagar2.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar2.Name = "btnPagar2";
             this.btnPagar2.Size = new System.Drawing.Size(140, 33);
             this.btnPagar2.TabIndex = 10;
@@ -965,7 +984,7 @@
             this.guna2Button4.HoverState.FillColor = System.Drawing.Color.DeepSkyBlue;
             this.guna2Button4.Image = global::ParcialN1.Properties.Resources.recibo;
             this.guna2Button4.Location = new System.Drawing.Point(87, 369);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(81, 33);
             this.guna2Button4.TabIndex = 8;
@@ -1013,7 +1032,7 @@
             "Tarjeta debito",
             "Tarjeta credito"});
             this.ComboBoxPagos2.Location = new System.Drawing.Point(259, 217);
-            this.ComboBoxPagos2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxPagos2.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxPagos2.Name = "ComboBoxPagos2";
             this.ComboBoxPagos2.Size = new System.Drawing.Size(307, 36);
             this.ComboBoxPagos2.TabIndex = 5;
@@ -1100,7 +1119,7 @@
             this.guna2PictureBox6.Image = global::ParcialN1.Properties.Resources.Elpadrino;
             this.guna2PictureBox6.ImageRotate = 0F;
             this.guna2PictureBox6.Location = new System.Drawing.Point(51, 61);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Enabled = true;
             this.guna2PictureBox6.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(12);
@@ -1128,8 +1147,8 @@
             this.pnlPeliEntr1.FillColor = System.Drawing.Color.RoyalBlue;
             this.pnlPeliEntr1.FillColor2 = System.Drawing.Color.Black;
             this.pnlPeliEntr1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.pnlPeliEntr1.Location = new System.Drawing.Point(165, 21);
-            this.pnlPeliEntr1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPeliEntr1.Location = new System.Drawing.Point(165, 23);
+            this.pnlPeliEntr1.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPeliEntr1.Name = "pnlPeliEntr1";
             this.pnlPeliEntr1.Size = new System.Drawing.Size(620, 520);
             this.pnlPeliEntr1.TabIndex = 5;
@@ -1147,7 +1166,7 @@
             this.btnPagar1.ForeColor = System.Drawing.Color.Black;
             this.btnPagar1.Image = global::ParcialN1.Properties.Resources.usd_circulo;
             this.btnPagar1.Location = new System.Drawing.Point(342, 421);
-            this.btnPagar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPagar1.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar1.Name = "btnPagar1";
             this.btnPagar1.Size = new System.Drawing.Size(140, 33);
             this.btnPagar1.TabIndex = 10;
@@ -1183,7 +1202,7 @@
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.DeepSkyBlue;
             this.guna2Button1.Image = global::ParcialN1.Properties.Resources.recibo;
             this.guna2Button1.Location = new System.Drawing.Point(87, 369);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(81, 33);
             this.guna2Button1.TabIndex = 8;
@@ -1231,7 +1250,7 @@
             "Tarjeta debito",
             "Tarjeta credito"});
             this.ComboBoxPagos1.Location = new System.Drawing.Point(259, 217);
-            this.ComboBoxPagos1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxPagos1.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxPagos1.Name = "ComboBoxPagos1";
             this.ComboBoxPagos1.Size = new System.Drawing.Size(307, 36);
             this.ComboBoxPagos1.TabIndex = 5;
@@ -1318,7 +1337,7 @@
             this.guna2PictureBox5.Image = global::ParcialN1.Properties.Resources.sw;
             this.guna2PictureBox5.ImageRotate = 0F;
             this.guna2PictureBox5.Location = new System.Drawing.Point(51, 61);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Enabled = true;
             this.guna2PictureBox5.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(12);
@@ -1335,7 +1354,7 @@
             this.pnlEstrenos.Controls.Add(this.guna2GradientPanel1);
             this.pnlEstrenos.Controls.Add(this.guna2GradientPanel2);
             this.pnlEstrenos.Location = new System.Drawing.Point(165, 23);
-            this.pnlEstrenos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlEstrenos.Margin = new System.Windows.Forms.Padding(2);
             this.pnlEstrenos.Name = "pnlEstrenos";
             this.pnlEstrenos.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
             this.pnlEstrenos.Size = new System.Drawing.Size(620, 520);
@@ -1352,7 +1371,7 @@
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel4.Location = new System.Drawing.Point(44, 286);
-            this.guna2GradientPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel4.ShadowDecoration.Depth = 60;
@@ -1372,7 +1391,7 @@
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(428, 25);
-            this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel3.ShadowDecoration.Depth = 60;
@@ -1392,7 +1411,7 @@
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(236, 25);
-            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel1.ShadowDecoration.Depth = 60;
@@ -1412,7 +1431,7 @@
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(44, 25);
-            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.BorderRadius = 15;
             this.guna2GradientPanel2.ShadowDecoration.Depth = 60;
@@ -1427,7 +1446,7 @@
             this.pnlPromos.Controls.Add(this.pnlOff);
             this.pnlPromos.Controls.Add(this.pnl2x1);
             this.pnlPromos.Location = new System.Drawing.Point(165, 23);
-            this.pnlPromos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPromos.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPromos.Name = "pnlPromos";
             this.pnlPromos.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
             this.pnlPromos.Size = new System.Drawing.Size(620, 520);
@@ -1566,7 +1585,7 @@
             this.pnlNosotros.Controls.Add(this.guna2GradientPanel10);
             this.pnlNosotros.Controls.Add(this.guna2GradientPanel9);
             this.pnlNosotros.Location = new System.Drawing.Point(165, 23);
-            this.pnlNosotros.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlNosotros.Margin = new System.Windows.Forms.Padding(2);
             this.pnlNosotros.Name = "pnlNosotros";
             this.pnlNosotros.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
             this.pnlNosotros.Size = new System.Drawing.Size(620, 520);
@@ -1605,7 +1624,6 @@
             this.guna2HtmlLabel17.TabIndex = 2;
             this.guna2HtmlLabel17.Text = "Estudiante de TUP";
             this.guna2HtmlLabel17.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.guna2HtmlLabel17.Click += new System.EventHandler(this.guna2HtmlLabel17_Click);
             // 
             // guna2HtmlLabel18
             // 
@@ -1617,7 +1635,6 @@
             this.guna2HtmlLabel18.Size = new System.Drawing.Size(109, 23);
             this.guna2HtmlLabel18.TabIndex = 1;
             this.guna2HtmlLabel18.Text = "Santiago Risso";
-            this.guna2HtmlLabel18.Click += new System.EventHandler(this.guna2HtmlLabel18_Click);
             // 
             // guna2GradientPanel13
             // 
@@ -1848,7 +1865,7 @@
             this.pnlIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(33)))), ((int)(((byte)(48)))));
             this.pnlIngresar.Controls.Add(this.guna2CustomGradientPanel1);
             this.pnlIngresar.Location = new System.Drawing.Point(165, 23);
-            this.pnlIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlIngresar.Name = "pnlIngresar";
             this.pnlIngresar.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
             this.pnlIngresar.Size = new System.Drawing.Size(620, 520);
@@ -1887,6 +1904,7 @@
             this.btnIngresarAdmin.Size = new System.Drawing.Size(180, 35);
             this.btnIngresarAdmin.TabIndex = 3;
             this.btnIngresarAdmin.Text = "Ingresar";
+            this.btnIngresarAdmin.Click += new System.EventHandler(this.btnIngresarAdmin_Click);
             // 
             // lblAdmin
             // 
@@ -1952,26 +1970,199 @@
             this.txtUsuario.Size = new System.Drawing.Size(305, 32);
             this.txtUsuario.TabIndex = 0;
             // 
+            // pnlAdministrador
+            // 
+            this.pnlAdministrador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(33)))), ((int)(((byte)(48)))));
+            this.pnlAdministrador.Controls.Add(this.guna2DataGridView1);
+            this.pnlAdministrador.Controls.Add(this.guna2CustomGradientPanel3);
+            this.pnlAdministrador.Controls.Add(this.guna2CustomGradientPanel2);
+            this.pnlAdministrador.Controls.Add(this.guna2CustomGradientPanel4);
+            this.pnlAdministrador.Location = new System.Drawing.Point(165, 23);
+            this.pnlAdministrador.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlAdministrador.Name = "pnlAdministrador";
+            this.pnlAdministrador.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
+            this.pnlAdministrador.Size = new System.Drawing.Size(620, 520);
+            this.pnlAdministrador.TabIndex = 8;
+            // 
+            // guna2DataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeight = 4;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(33, 144);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(551, 325);
+            this.guna2DataGridView1.TabIndex = 3;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // guna2CustomGradientPanel3
+            // 
+            this.guna2CustomGradientPanel3.Controls.Add(this.guna2HtmlLabel23);
+            this.guna2CustomGradientPanel3.Controls.Add(this.guna2HtmlLabel24);
+            this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel3.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(421, 33);
+            this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
+            this.guna2CustomGradientPanel3.Quality = 50;
+            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(161, 70);
+            this.guna2CustomGradientPanel3.TabIndex = 2;
+            // 
+            // guna2HtmlLabel23
+            // 
+            this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel23.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel23.Location = new System.Drawing.Point(9, 29);
+            this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
+            this.guna2HtmlLabel23.Size = new System.Drawing.Size(85, 30);
+            this.guna2HtmlLabel23.TabIndex = 1;
+            this.guna2HtmlLabel23.Text = "BATMAN";
+            // 
+            // guna2HtmlLabel24
+            // 
+            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel24.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel24.Location = new System.Drawing.Point(5, 6);
+            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
+            this.guna2HtmlLabel24.Size = new System.Drawing.Size(109, 19);
+            this.guna2HtmlLabel24.TabIndex = 0;
+            this.guna2HtmlLabel24.Text = "Pelicula mas vista";
+            // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel21);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel22);
+            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(227, 33);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.Quality = 50;
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(161, 70);
+            this.guna2CustomGradientPanel2.TabIndex = 2;
+            // 
+            // guna2HtmlLabel21
+            // 
+            this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel21.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel21.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel21.Location = new System.Drawing.Point(9, 29);
+            this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
+            this.guna2HtmlLabel21.Size = new System.Drawing.Size(92, 30);
+            this.guna2HtmlLabel21.TabIndex = 1;
+            this.guna2HtmlLabel21.Text = "47622000";
+            // 
+            // guna2HtmlLabel22
+            // 
+            this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel22.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel22.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel22.Location = new System.Drawing.Point(5, 6);
+            this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
+            this.guna2HtmlLabel22.Size = new System.Drawing.Size(91, 19);
+            this.guna2HtmlLabel22.TabIndex = 0;
+            this.guna2HtmlLabel22.Text = "Total ganancia";
+            // 
+            // guna2CustomGradientPanel4
+            // 
+            this.guna2CustomGradientPanel4.Controls.Add(this.guna2HtmlLabel20);
+            this.guna2CustomGradientPanel4.Controls.Add(this.guna2HtmlLabel19);
+            this.guna2CustomGradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel4.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel4.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(10)))), ((int)(((byte)(48)))));
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(33, 33);
+            this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
+            this.guna2CustomGradientPanel4.Quality = 50;
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(161, 70);
+            this.guna2CustomGradientPanel4.TabIndex = 2;
+            // 
+            // guna2HtmlLabel20
+            // 
+            this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel20.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel20.Location = new System.Drawing.Point(9, 29);
+            this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
+            this.guna2HtmlLabel20.Size = new System.Drawing.Size(56, 30);
+            this.guna2HtmlLabel20.TabIndex = 1;
+            this.guna2HtmlLabel20.Text = "15874";
+            // 
+            // guna2HtmlLabel19
+            // 
+            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel19.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel19.Location = new System.Drawing.Point(5, 6);
+            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
+            this.guna2HtmlLabel19.Size = new System.Drawing.Size(114, 19);
+            this.guna2HtmlLabel19.TabIndex = 0;
+            this.guna2HtmlLabel19.Text = "Entradas vendidas";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(782, 493);
+            this.ClientSize = new System.Drawing.Size(780, 540);
+            this.Controls.Add(this.pnlPeliculas);
+            this.Controls.Add(this.pnlIngresar);
+            this.Controls.Add(this.pnlAdministrador);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlLeft);
-            this.Controls.Add(this.pnlPeliculas);
             this.Controls.Add(this.pnlPeliEntr2);
             this.Controls.Add(this.pnlEstrenos);
             this.Controls.Add(this.pnlNosotros);
             this.Controls.Add(this.pnlPromos);
-            this.Controls.Add(this.pnlIngresar);
             this.Controls.Add(this.pnlPeliEntr3);
             this.Controls.Add(this.pnlPeliEntr1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TUP - Cine";
@@ -2029,6 +2220,14 @@
             this.pnlIngresar.ResumeLayout(false);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
+            this.pnlAdministrador.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.guna2CustomGradientPanel3.ResumeLayout(false);
+            this.guna2CustomGradientPanel3.PerformLayout();
+            this.guna2CustomGradientPanel2.ResumeLayout(false);
+            this.guna2CustomGradientPanel2.PerformLayout();
+            this.guna2CustomGradientPanel4.ResumeLayout(false);
+            this.guna2CustomGradientPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2150,6 +2349,17 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox5;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox4;
+        private Guna.UI2.WinForms.Guna2Panel pnlAdministrador;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel21;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
     }
 }
 

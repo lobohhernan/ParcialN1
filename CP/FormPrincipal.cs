@@ -34,6 +34,7 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
+            pnlAdministrador.Visible = false;
         }
 
         private void btnEstrenos_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
+            pnlAdministrador.Visible = false;
         }
 
         private void btnPromo_Click(object sender, EventArgs e)
@@ -62,6 +64,7 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
+            pnlAdministrador.Visible = false;
         }
 
         private void btnNosotros_Click(object sender, EventArgs e)
@@ -76,6 +79,7 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
+            pnlAdministrador.Visible = false;
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -90,6 +94,7 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
+            pnlAdministrador.Visible = false;
         }
 
         private void btnComprar1_Click(object sender, EventArgs e)
@@ -102,7 +107,7 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = true;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
-
+            pnlAdministrador.Visible = false;
         }
 
         private void btnComprar2_Click(object sender, EventArgs e)
@@ -115,6 +120,7 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = true;
             pnlPeliEntr3.Visible = false;
+            pnlAdministrador.Visible = false;
         }
 
         private void btnComprar3_Click(object sender, EventArgs e)
@@ -127,16 +133,20 @@ namespace ParcialN1
             pnlPeliEntr1.Visible = false;
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = true;
+            pnlAdministrador.Visible = false;
         }
 
-        private void guna2HtmlLabel17_Click(object sender, EventArgs e)
+        private void btnIngresarAdmin_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void guna2HtmlLabel18_Click(object sender, EventArgs e)
-        {
-
+            pnlIngresar.Visible = false;
+            pnlEstrenos.Visible = false;
+            pnlPromos.Visible = false;
+            pnlNosotros.Visible = false;
+            pnlPeliculas.Visible = false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = false;
+            pnlAdministrador.Visible = true;
         }
     }
 }
