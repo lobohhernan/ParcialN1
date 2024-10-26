@@ -178,5 +178,8 @@
   <ItemGroup>
     <None Include="Resources\30Sep24 Anis Live stream Free Upload.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usd-circulo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

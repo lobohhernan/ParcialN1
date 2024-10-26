@@ -31,6 +31,9 @@ namespace ParcialN1
             pnlPromos.Visible=false;
             pnlNosotros.Visible=false;
             pnlIngresar.Visible=false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = false;
         }
 
         private void btnEstrenos_Click(object sender, EventArgs e)
@@ -42,6 +45,9 @@ namespace ParcialN1
             pnlPromos.Visible = false;
             pnlNosotros.Visible = false;
             pnlIngresar.Visible = false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = false;
         }
 
         private void btnPromo_Click(object sender, EventArgs e)
@@ -53,6 +59,9 @@ namespace ParcialN1
             pnlPeliculas.Visible = false;
             pnlNosotros.Visible = false;
             pnlIngresar.Visible = false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = false;
         }
 
         private void btnNosotros_Click(object sender, EventArgs e)
@@ -64,6 +73,9 @@ namespace ParcialN1
             pnlPromos.Visible = false;
             pnlPeliculas.Visible = false;
             pnlIngresar.Visible = false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = false;
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -75,6 +87,47 @@ namespace ParcialN1
             pnlPromos.Visible = false;
             pnlNosotros.Visible = false;
             pnlPeliculas.Visible = false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = false;
         }
+
+        private void btnComprar1_Click(object sender, EventArgs e)
+        {
+            pnlIngresar.Visible = false;
+            pnlEstrenos.Visible = false;
+            pnlPromos.Visible = false;
+            pnlNosotros.Visible = false;
+            pnlPeliculas.Visible = false;
+            pnlPeliEntr1.Visible = true;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = false;
+
+        }
+
+        private void btnComprar2_Click(object sender, EventArgs e)
+        {
+            pnlIngresar.Visible = false;
+            pnlEstrenos.Visible = false;
+            pnlPromos.Visible = false;
+            pnlNosotros.Visible = false;
+            pnlPeliculas.Visible = false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = true;
+            pnlPeliEntr3.Visible = false;
+        }
+
+        private void btnComprar3_Click(object sender, EventArgs e)
+        {
+            pnlIngresar.Visible = false;
+            pnlEstrenos.Visible = false;
+            pnlPromos.Visible = false;
+            pnlNosotros.Visible = false;
+            pnlPeliculas.Visible = false;
+            pnlPeliEntr1.Visible = false;
+            pnlPeliEntr2.Visible = false;
+            pnlPeliEntr3.Visible = true;
+        }
+
     }
 }
