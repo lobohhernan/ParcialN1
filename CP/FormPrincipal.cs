@@ -12,6 +12,8 @@ namespace ParcialN1
 {
     public partial class FormPrincipal : Form
     {
+        string AdminUser = "admin";
+        string AdminPass = "admin1234";
         public FormPrincipal()
         {
             InitializeComponent();
@@ -138,6 +140,15 @@ namespace ParcialN1
 
         private void btnIngresarAdmin_Click(object sender, EventArgs e)
         {
+            string username = txtUsuario.Text;
+            string password = txtUsuario.Text;
+
+            if (username != AdminUser && password != AdminPass)
+            {
+                //pnlAdministrador.Visible = true;
+            }
+
+
             pnlIngresar.Visible = false;
             pnlEstrenos.Visible = false;
             pnlPromos.Visible = false;
