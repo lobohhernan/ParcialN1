@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ParcialN1.CL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -179,6 +181,50 @@ namespace ParcialN1
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void btnPagar1_Click(object sender, EventArgs e)
+        {
+            PeliculaL pelicula = new PeliculaL();
+            pelicula.Nombre = txtNombre1.Text;
+            pelicula.Correo = txtCorreo1.Text;
+            pelicula.Pago = ComboBoxPagos1.Text;
+            pelicula.Cantidad = Convert.ToInt32(numboxEntradas1.Text);
+            pelicula.AgregarDatos(pelicula.Nombre, pelicula.Correo, pelicula.Pago, pelicula.Cantidad);
+
+        }
+
+        private void btnPagar2_Click(object sender, EventArgs e)
+        {
+            PeliculaL pelicula = new PeliculaL();
+            pelicula.Nombre = txtNombre1.Text;
+            pelicula.Correo = txtCorreo1.Text;
+            pelicula.Pago = ComboBoxPagos1.Text;
+            pelicula.Cantidad = Convert.ToInt32(numboxEntradas1.Text);
+            pelicula.AgregarDatos(pelicula.Nombre, pelicula.Correo, pelicula.Pago, pelicula.Cantidad);
+        }
+
+        private void btnPagar3_Click(object sender, EventArgs e)
+        {
+            PeliculaL pelicula = new PeliculaL();
+            pelicula.Nombre = txtNombre1.Text;
+            pelicula.Correo = txtCorreo1.Text;
+            pelicula.Pago = ComboBoxPagos1.Text;
+            pelicula.Cantidad = Convert.ToInt32(numboxEntradas1.Text);
+            pelicula.AgregarDatos(pelicula.Nombre, pelicula.Correo, pelicula.Pago, pelicula.Cantidad);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            string consulta = "SELECT * FORM venta";
+            DataTable dt = new DataTable();
+
+            SqlConnection conexion = new SqlConnection("server=DESKTOP-PH45P1N;database=cine;integrated security = true");
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            conexion.Open();
+            SqlDataAdapter adaptador = new SqlDataAdapter(comando);
+            adaptador.Fill(dt);
+            guna2DataGridView1.DataSource = dt;
         }
     }
 }
