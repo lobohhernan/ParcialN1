@@ -181,7 +181,7 @@ namespace ParcialN1
             conexion.Open();
             SqlDataAdapter adaptador = new SqlDataAdapter(comando);
             adaptador.Fill(dt);
-            guna2DataGridView1.DataSource = dt;
+            dataGridViewVentas.DataSource = dt;
         }
 
         private void btnPagar2_Click_1(object sender, EventArgs e)
@@ -289,6 +289,28 @@ namespace ParcialN1
             {
                 // Manejo de excepciones en caso de datos inválidos
                 MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                // Obtener los datos de la base de datos
+                int totalEntradas;
+                DataTable dtVentas = Pelicula.ObtenerVentas(out totalEntradas);
+
+                // Asignar los datos al DataGridView
+                dataGridViewVentas.DataSource = dtVentas;
+                lblEntradasVendidas.Text = $"{totalEntradas}";
+                int totalGanancias = totalEntradas * 3000; // Asumiendo que cada entrada vale 3000
+                lblTotalGanancia.Text = $"${totalGanancias:0.00}";
+
+                MessageBox.Show("Datos actualizados correctamente.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar los datos: {ex.Message}");
             }
         }
     }

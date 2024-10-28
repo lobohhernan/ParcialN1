@@ -1,6 +1,7 @@
 ﻿using ParcialN1.CD;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,10 @@ namespace ParcialN1.CL
             }
             
             return peliculaD.GuardarVenta(nombre, correo, metodoPago, cantidad);
+        }
+        public DataTable ObtenerVentas(out int totalEntradas)
+        {
+            return peliculaD.ObtenerVentas(out totalEntradas);
         }
     }
 }
