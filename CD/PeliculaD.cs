@@ -5,34 +5,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ParcialN1.CD
 {
     public class PeliculaD
     {
-        public static void SeleccionarCliente(string Nombre, string Correo, string Pago, int Cantidad)
+
+        public bool GuardarVenta(string nombre, string correo, string metodoPago, int cantidad)
         {
-            try
+            using (SqlConnection connection = new SqlConnection("server =.; database = cine; integrated security = true"))
             {
+                string query = "INSERT INTO Ventas (Nombre, Correo, MetodoPago, Cantidad) VALUES (@Nombre, @Correo, @MetodoPago, @Cantidad)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Nombre", nombre);
+                command.Parameters.AddWithValue("@Correo", correo);
+                command.Parameters.AddWithValue("@MetodoPago", metodoPago);
+                command.Parameters.AddWithValue("@Cantidad", cantidad);
 
-                SqlConnection conexion = new SqlConnection("server=DESKTOP-PH45P1N;database=cine;integrated security = true");
-
-                SqlCommand comando = new SqlCommand("INSERT INTO cine (Nombre,Correo,Pago,Cantidad) VALUES (@nombre,@correo,@metodo_pago,@cantidad)", conexion);
-
-                comando.Parameters.AddWithValue("@nombre", Nombre);
-                comando.Parameters.AddWithValue("@correo", Correo);
-                comando.Parameters.AddWithValue("@metodo_pago", Pago);
-                comando.Parameters.AddWithValue("@cantidad", Cantidad);
-                conexion.Open();
-
-                comando.ExecuteNonQuery();
-
+                connection.Open();
+                int result = command.ExecuteNonQuery();
+                return result > 0;
             }
-            catch
-            {
-                MessageBox.Show("error");
-            }
-
         }
     }
 }
+    
+    
+

@@ -1,4 +1,5 @@
-﻿using ParcialN1.CL;
+﻿using ParcialN1.CD;
+using ParcialN1.CL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,13 +15,11 @@ namespace ParcialN1
 {
     public partial class FormPrincipal : Form
     {
-        string AdminUser = "admin";
-        string AdminPass = "admin1234";
         public FormPrincipal()
         {
             InitializeComponent();
         }
-
+        private PeliculaL Pelicula = new PeliculaL();
         private void button4_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -140,17 +139,9 @@ namespace ParcialN1
             pnlAdministrador.Visible = false;
         }
 
+        
         private void btnIngresarAdmin_Click(object sender, EventArgs e)
         {
-            string username = txtUsuario.Text;
-            string password = txtUsuario.Text;
-
-            if (username != AdminUser && password != AdminPass)
-            {
-                //pnlAdministrador.Visible = true;
-            }
-
-
             pnlIngresar.Visible = false;
             pnlEstrenos.Visible = false;
             pnlPromos.Visible = false;
@@ -160,71 +151,145 @@ namespace ParcialN1
             pnlPeliEntr2.Visible = false;
             pnlPeliEntr3.Visible = false;
 
-            string usuarioCorrecto = "Admin1234";
-            string contraseñaCorrecta = "12345";
-
-            // Obtener valores de los TextBox
+            string usuarioCorrecto = "admin1234";
+            string contraseñaCorrecta = "1234";
+            
             string usuarioIngresado = txtUsuario.Text;
             string contraseñaIngresada = txtContraseña.Text;
-
-            // Verificar credenciales
+            
             if (usuarioIngresado == usuarioCorrecto && contraseñaIngresada == contraseñaCorrecta)
             {
-                // Credenciales correctas, mostrar panel administrador
                 pnlAdministrador.Visible = true;
                 MessageBox.Show("Bienvenido al panel administrador");
             }
             else
             {
-                // Credenciales incorrectas, mostrar mensaje de error
                 pnlIngresar.Visible = true;
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
 
-        private void btnPagar1_Click(object sender, EventArgs e)
+    
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
-            PeliculaL pelicula = new PeliculaL();
-            pelicula.Nombre = txtNombre1.Text;
-            pelicula.Correo = txtCorreo1.Text;
-            pelicula.Pago = ComboBoxPagos1.Text;
-            pelicula.Cantidad = Convert.ToInt32(numboxEntradas1.Text);
-            pelicula.AgregarDatos(pelicula.Nombre, pelicula.Correo, pelicula.Pago, pelicula.Cantidad);
-
-        }
-
-        private void btnPagar2_Click(object sender, EventArgs e)
-        {
-            PeliculaL pelicula = new PeliculaL();
-            pelicula.Nombre = txtNombre1.Text;
-            pelicula.Correo = txtCorreo1.Text;
-            pelicula.Pago = ComboBoxPagos1.Text;
-            pelicula.Cantidad = Convert.ToInt32(numboxEntradas1.Text);
-            pelicula.AgregarDatos(pelicula.Nombre, pelicula.Correo, pelicula.Pago, pelicula.Cantidad);
-        }
-
-        private void btnPagar3_Click(object sender, EventArgs e)
-        {
-            PeliculaL pelicula = new PeliculaL();
-            pelicula.Nombre = txtNombre1.Text;
-            pelicula.Correo = txtCorreo1.Text;
-            pelicula.Pago = ComboBoxPagos1.Text;
-            pelicula.Cantidad = Convert.ToInt32(numboxEntradas1.Text);
-            pelicula.AgregarDatos(pelicula.Nombre, pelicula.Correo, pelicula.Pago, pelicula.Cantidad);
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            string consulta = "SELECT * FORM venta";
+            string consulta = "SELECT * FORM Ventas";
             DataTable dt = new DataTable();
 
-            SqlConnection conexion = new SqlConnection("server=DESKTOP-PH45P1N;database=cine;integrated security = true");
+            SqlConnection conexion = new SqlConnection("server=.;database=cine;integrated security = true");
             SqlCommand comando = new SqlCommand(consulta, conexion);
             conexion.Open();
             SqlDataAdapter adaptador = new SqlDataAdapter(comando);
             adaptador.Fill(dt);
             guna2DataGridView1.DataSource = dt;
+        }
+
+        private void btnPagar2_Click_1(object sender, EventArgs e)
+        {
+            Pelicula.Nombre = txtNombre2.Text;
+            Pelicula.Correo = txtCorreo2.Text;
+            Pelicula.MetodoPago = ComboBoxPagos2.SelectedItem?.ToString() ?? ""; // Maneja caso donde no haya selección
+            Pelicula.Cantidad = Convert.ToInt32(numboxEntradas2.Text);
+
+            try
+            {
+                // Llamar a GuardarVenta sin parámetros, ya que usa las propiedades de la clase
+                bool ventaGuardada = Pelicula.GuardarVenta();
+
+                if (ventaGuardada)
+                {
+                    MessageBox.Show("Venta guardada correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar la venta.");
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                // Manejo de excepciones en caso de datos inválidos
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void numboxEntradas2_ValueChanged(object sender, EventArgs e)
+        {
+            int precioEntrada = 3000;
+
+            decimal total = precioEntrada * numboxEntradas2.Value;
+            lblTotal2.Text = $"Total: ${total:0.00}"; 
+        }
+
+        private void btnPagar3_Click_1(object sender, EventArgs e)
+        {
+            Pelicula.Nombre = txtNombre3.Text;
+            Pelicula.Correo = txtCorreo3.Text;
+            Pelicula.MetodoPago = ComboBoxPagos3.SelectedItem?.ToString() ?? ""; // Maneja caso donde no haya selección
+            Pelicula.Cantidad = Convert.ToInt32(numboxEntradas3.Text);
+
+            try
+            {
+                // Llamar a GuardarVenta sin parámetros, ya que usa las propiedades de la clase
+                bool ventaGuardada = Pelicula.GuardarVenta();
+
+                if (ventaGuardada)
+                {
+                    MessageBox.Show("Venta guardada correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar la venta.");
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                // Manejo de excepciones en caso de datos inválidos
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void numboxEntradas3_ValueChanged(object sender, EventArgs e)
+        {
+            int precioEntrada = 3000;
+
+            decimal total = precioEntrada * numboxEntradas3.Value;
+            lblTotal3.Text = $"Total: ${total:0.00}";
+        }
+
+        private void numboxEntradas1_ValueChanged(object sender, EventArgs e)
+        {
+            int precioEntrada = 3000;
+
+            decimal total = precioEntrada * numboxEntradas1.Value;
+            lblTotal1.Text = $"Total: ${total:0.00}";
+        }
+
+        private void btnPagar1_Click_1(object sender, EventArgs e)
+        {
+            Pelicula.Nombre = txtNombre1.Text;
+            Pelicula.Correo = txtCorreo1.Text;
+            Pelicula.MetodoPago = ComboBoxPagos1.SelectedItem?.ToString() ?? ""; // Maneja caso donde no haya selección
+            Pelicula.Cantidad = Convert.ToInt32(numboxEntradas1.Text);
+
+            try
+            {
+                // Llamar a GuardarVenta sin parámetros, ya que usa las propiedades de la clase
+                bool ventaGuardada = Pelicula.GuardarVenta();
+
+                if (ventaGuardada)
+                {
+                    MessageBox.Show("Venta guardada correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar la venta.");
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                // Manejo de excepciones en caso de datos inválidos
+                MessageBox.Show($"Error: {ex.Message}");
+            }
         }
     }
 }

@@ -53,21 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CD\AdminD.cs" />
     <Compile Include="CD\PeliculaD.cs" />
-    <Compile Include="CL\AdminL.cs" />
     <Compile Include="CL\PeliculaL.cs" />
     <Compile Include="CP\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CP\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CP\FormAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CP\FormAdmin.Designer.cs">
-      <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
